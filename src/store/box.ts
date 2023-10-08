@@ -1,8 +1,8 @@
 import type { Writable } from 'svelte/store';
 import { writable, get } from 'svelte/store';
-import { BoxHeight, BoxWidth } from '../lib/settings';
-import { BoxCellState } from '../lib/entities';
-import type { GameView } from '../lib/entities';
+import { BoxHeight, BoxWidth } from '../../src/lib/settings';
+import { BoxCellState } from '../../src/lib/entities';
+import type { GameView } from '../../src/lib/entities';
 
 export const Box: Writable<GameView> = writable(
   Array(BoxHeight)
