@@ -48,7 +48,7 @@ export function figureHeight(figure: FigureView): number {
   return figure.length;
 }
 
-export function rendomFigure(): FigureView {
+export function randomFigure(): FigureView {
   const names = Object.keys(Figures);
   const randomIndex = Math.round(Math.random() * (names.length - 1));
   const randomName = names[randomIndex];
